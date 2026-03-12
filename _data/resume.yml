@@ -1,122 +1,85 @@
-# 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
-# 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
+# 数据格式为 yaml (文件以 .yml 结尾)
+title: "韩步凡的简历"
+lang: "zh" 
+name: "韩步凡"
+jobtitle: "机器学习 & 数据分析" 
+photo: "" # 照片可空，不显示
 
-title: "简历标题"
-lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "你的名字"
-jobtitle: "求职意向" #可空不显示
-photo: "assets/img/photo.jpg" #照片可空，不显示
+contact: 
+  - text: "22300120126@m.fudan.edu.cn"
+    href: 'mailto:22300120126@m.fudan.edu.cn'
+    icon: 'icons/email.svg'
+  - text: "13918565541"
+    href: 'tel:13918565541'
+    icon: 'icons/phone.svg'
+  - text: "kaggle.com/hsiaosuan"
+    href: 'https://www.kaggle.com/hsiaosuan'
+    icon: 'icons/web.svg' 
+    attr: 'target="_blank"'
 
-#联系方式
-contact: #联系方式连接等3~5行
-- text: "youremail@example.com" #文本内容
-  href: 'mailto:youremail@example.com' #链接，无链接则空  
-  icon: 'icons/email.svg' #图标 svg文件
-- text: "1234567890"
-  href: 'tel:1234567890'
-  icon: 'icons/phone.svg'
-- text: "your-website.com"
-  href: 'http://your-website.com'
-  icon: 'icons/web.svg'
-- text: "GitHubID"
-  href: 'https://github.com/NewFuture'
-  icon: "icons/github.svg"
-  attr: 'target="_blank"' #新标签页打开
-  # - text: "地址"
-  #   icon: "icons/location.svg"
+main: 
+  - type: education 
+    name: 教育经历 
+    content: 
+      - title: 复旦大学
+        duration: "2022年09月 - 2027年06月"
+        sub: "本科 | 英语 + 物理 (复合背景)"
+        detail: "核心课程：量子力学、电动力学、统计物理、概率论与数理统计、高等数学A。<br>语言成绩：托福（TOEFL）115分，GRE 333分，具备全英文学术工作及无障碍沟通能力。<br>荣誉奖项：2023年 & 2024年中国大学生英语辩论赛（CUDC）全国一等奖。"
 
-#main下面是主体内容，类别条数不限
-main: #简历主要内容，
-- type: education #类别为ID
-  name: 教育 #显示名称，空则使用type
-  content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
-  - title: 大学名称
-    duration: "2011年x月 - 2015年"
-    sub: 地点或学历
-    detail: 专业或者简短说明
-  - title: Your University
-    duration: Aug 2007 - Jun 2011
-    sub: Ut enim ad minim veniam
-    detail: Master Bachelor of Computer Science & Technology.
+  - type: skills
+    name: "专业技能"
+    content:
+      - title: 编程语言
+        items: 
+          - Python
+          - SQL
+          - R
+      - title: 算法与框架
+        summary: "熟练掌握 PyTorch 开发；熟悉深度学习模型构建、特征工程、复杂时序预测及模型集成策略（软/硬投票、中位数融合等）。"
+      - title: 工程与环境
+        summary: "熟练使用 Linux、Git，具备使用 Docker 部署深度学习容器、管理 CUDA 依赖及优化多 GPU 计算环境的实战经验。"
 
-- type: skills
-  # name: "技能"
-  content:
-  - title: 编程语言
-    items: #itmems 可以小块的方式显示
-    - 汉语
-    - 语言2
-    - 语言3
-  - title: Skill Group
-    summary: Consectetur, Adipiscing, Elit
+  - type: projects
+    name: 科研与项目经历
+    content:
+      - title: 基于依存句法树掩码的扩散语言模型 (LLaDA) 训练研究
+        duration: "2026年02月 - 至今"
+        sub: "核心研究者 | 本科生科研课题"
+        detail: "探索语言学句法先验对扩散语言模型（Diffusion LLM）预训练的增益。通过在固定规模数据集（BabyLM）上控制变量，系统性地评估了自顶向下、自底向上及子树等结构化掩码策略。独立完成底层数据到 Hugging Face Dataset 的转化，优化了前向传播与训练 Pipeline，为语言学先验的有效性提供了坚实的实验基准。"
+      - title: Kaggle 维苏威火山卷轴虚拟展开代码竞赛
+        duration: "2025年12月 - 2026年02月"
+        sub: "计算机视觉算法开发 / 银牌 (69/1293)"
+        detail: "针对大规模 3D X 射线体素数据，基于 PyTorch 构建 3D 语义分割模型，复原碳化古卷轴的三维结构。攻克低对比度环境下的特征提取难题，利用在早期项目中沉淀的实验框架实现快速迭代。引入DDP技术在多 GPU 环境下进行分布式训练，大幅缩短模型收敛周期。"
+      - title: Kaggle NFL 大数据超级碗：橄榄球球员轨迹预测竞赛
+        duration: "2025年09月 - 2025年12月"
+        sub: "时间序列算法开发 / 银牌 (33/1800+)"
+        detail: "基于 PyTorch 构建时空 Transformer 预测模型，分析 NFL 比赛中复杂的高维时空遥测数据。复用并优化了此前积累的快速迭代实验体系，高效提取球员运动轨迹与战术意图的时序依赖关系。通过对历史数据的深度挖掘与模型交叉验证，显著提升预测准确性。"
+      - title: Kaggle CMI 睡眠状态检测 (Gesture Recognition)
+        duration: "2025年06月 - 2025年09月"
+        sub: "核心成员 / Top 11% (304/2800)"
+        detail: "独立承担 IMU/TOF/THM 传感器数据的特征提取与多分支深度学习网络构建。从 0 到 1 搭建了针对表格数据的快速实验迭代与记录 Pipeline。创新提出权重枚举方法并入团队代码库，结合 SGKF 交叉验证与多维集成推理策略，显著提升模型鲁棒性。"
 
-- type: experience
-  name: 经验
-  content:
-  - title: 职位
-    sub: 某某公司
-    duration: "xxxx年xx月 - yyyy年yy月"
-    tags:
-    - 标签
-    summary: 职务或者工作总结(自动折叠)
-    detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
-    # open: open
-    #可以设置open默认展开
-  - title: Job Title
-    sub: Your 2nd, Inc.  
-    duration: Apr 2013 - Mar 2016
-    tags: 
-    - tagname
-    summary: Summary your job or work. (Collapse)
-    detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  - type: experience
+    name: 综合素养与研究经历
+    content:
+      - title: 核心研究员
+        sub: "国家级社科项目：欧洲中国学"
+        duration: "2023年全年"
+        summary: "参与国家级社会科学基金项目，负责海量中英/多语种文献的整理、交叉比对与信息提炼。"
+        detail: "独立撰写并发表相关外交评论文章，展现了极强的学术研究能力、严密的逻辑思辨以及将复杂社科概念结构化的写作能力。"
+      - title: 副社长
+        sub: "复旦大学英语辩论协会 (FEDS)"
+        duration: "2023年09月 - 2024年09月"
+        summary: "负责社团百人规模的日常运营，组织并裁判每周辩论友谊赛；主讲辩论技巧与逻辑建构课程。"
+        detail: "运营社团微信公众号，负责对外宣发与活动总结，提升了团队领导力与跨文化公众表达能力。"
 
-- type: projects
-  name: Projects
-  content:
-  - title: 项目名称
-    duration: xxxx年xx月 - yyyy年yy月
-    detail: 项目和工作介绍，项目总结.
-    sub: 维护者
-  - title: Project Name
-    summary: Projects' introduction or summary
-    detail:
-      md: _data/demo.md
-    sub: Creator and maintainer.
-   #可继续添加更多内容
+others: 
+  - type: others 
+    name: '个人总结'
+    content: 
+      - text: "复旦大学英语与物理复合背景，兼具硬核数据技术与卓越的沟通逻辑。精通 PyTorch 及 Kaggle 竞赛实战，擅长处理复杂时序数据与计算机视觉任务。具备出色的跨文化协作、文献研究与思辨表达能力，能高效将算法思维转化为量化策略与业务洞察，推动数据产品落地。"
 
-#others 其他简略内容(列表)
-others: #其他列表显示
-- type: others #ID可以为空
-  name: '其他'
-  content: #选择需要的格式
-  - 单行文字
-  - title: "加粗:"
-    text: "列表项二"
-  - title: "兴趣:"
-    items: #单行列表
-    - 睡觉
-    - 吃饭
-    - coding
-  - title: 列表
-    list:
-    - 第一项
-    - 第二项
-#- type: 
-#  name: '其他'
-#  content: #选择需要的格式
-#  - 单行文字
-#  - 如果有可以继续添加
-
-#footer 脚注，打印版和web版不同不显示    
-footer: #脚注多组
-  print: #打印版markdown或者html
+footer: 
+  print: 
   screen:
-  - text: "简历脚注"
-  #   href: '/'
-  - text: "Made with &hearts; by NewFuture"
-    href: "https://github.com/NewFuture/CV/"
-
-#页面额外js脚本，如xx统计
-scripts:
-#- src: "assets/js/resume.js"
-#  defer: defer #可以设置defer或者sync异步加载
+    - text: "Made with ❤️"
