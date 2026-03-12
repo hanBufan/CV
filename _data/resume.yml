@@ -9,12 +9,19 @@ contact:
   - text: "22300120126@m.fudan.edu.cn"
     href: 'mailto:22300120126@m.fudan.edu.cn'
     icon: 'icons/email.svg'
-  - text: "13918565541"
+  - text: "+86 13918565541"
+    href: 'tel:13918565541'
+    icon: 'icons/phone.svg'
+  - text: "+1 (626)-766-9198"
     href: 'tel:13918565541'
     icon: 'icons/phone.svg'
   - text: "kaggle.com/hsiaosuan"
     href: 'https://www.kaggle.com/hsiaosuan'
     icon: 'icons/web.svg' 
+    attr: 'target="_blank"'
+  - text: "github.com/hanBufan"
+    href: 'https://github.com/hanBufan/'
+    icon: 'icons/github.svg'
     attr: 'target="_blank"'
 
 main: 
