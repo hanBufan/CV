@@ -2,28 +2,28 @@ title: 简历模板
 #baseurl: "" # default set by github
 querytime: true  #在头像,js和css等后加上时间戳防止缓存,false关闭
 manifest: '' # html5离线缓存配置文件名,默认关闭
+
 #打印样式设置
 subject-width: 20% #左边栏宽度
 print:
   # 打印样式模板,
-  # 空不设置打印样式，模板变量无效
-  # basic:网页基本一致，
-  # flex: 侧栏密集排版，
-  # block:无侧栏
   template: 'basic' 
-  #字体大小
-  fontsize: 12px
+  # 字体大小：调大至 14px（如果14px还是不够清晰，可以尝试 15px）
+  fontsize: 15px
+  # 颜色：添加纯黑色以提高对比度（部分模板原生支持此配置）
+  color: '#000000'
   #页面边距设置，3~5mm为佳[不建议修改]
   page-margin: '6mm 5mm 3mm' #上，右(无同上)，下(无同上)，左（无同右）
   #也顶部(姓名栏目)边距偏移
   header-padding: '8mm 0 3mm'
   #每块设置(对应main里面每一条)
   section:
-    margin: '3px auto 0' #边距
-    padding: '3px 0' #内部偏移
+    # 字体变大后，略微增加区块间距防止视觉拥挤
+    margin: '5px auto 0' 
+    padding: '5px 0' 
     width: '80%' #内容宽度 basic无效
-  # content每一条边距设置
-  block-margin: 4px 0
+  # content每一条边距设置：略微调大
+  block-margin: 6px 0
   #打印版页脚设置
   footer:
     top: 5px #上边距
