@@ -2,7 +2,7 @@
 title: "韩步凡的简历"
 lang: "zh" 
 name: "韩步凡"
-photo: "" # 照片可空，不显示
+photo: "assets/img/photo.jpg" # 照片可空，不显示
 
 contact: 
   - text: "22300120126@m.fudan.edu.cn"
@@ -63,6 +63,13 @@ main:
         duration: "2025年06月 - 2025年09月"
         sub: "核心成员 / Top 11% (304/2800)"
         detail: "独立承担 IMU/TOF/THM 传感器数据的特征提取与多分支深度学习网络构建，个人单次提交成绩达到铜牌标准线。从 0 到 1 搭建了针对表格数据的快速实验迭代与记录 Pipeline。创新提出权重枚举方法并入团队代码库，结合 SGKF 交叉验证与多维集成推理策略，显著提升模型鲁棒性。"
+
+  - type: experience
+    name: 实习经历
+    content:
+      - title: 产品经理实习生
+        sub: "字节跳动 · 国际支付部门 · TikTok Pay"
+        duration: "2026年04月 - 至今"
 
   - type: experience
     name: 综合素养与研究经历
