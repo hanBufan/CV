@@ -48,6 +48,17 @@ main:
           - "<strong>7/14 灰度、7/31 全量</strong>；覆盖 <strong>50K+ 用户 / ~500K 笔还款 / USD 500K 还款金额</strong>。A/B：钱包交易量 <strong>+5%</strong> · Balance 渗透率 <strong>+22.3%</strong> · PSR <strong>+1.17%</strong> · 充值率 <strong>+12.11%</strong> · 人均充值 <strong>+23.63%</strong> · 提现率 <strong>-18.8%</strong> · 人均提现 <strong>-20.0%</strong>；BNPL / Ploan / 电商护栏无显著负向。"
 
 
+  - type: agent-project
+    name: "AI 产品与 Agent 项目"
+    content:
+      - title: "Human + Agent 技术图书翻译流水线"
+        sub: "商业出版项目（进行中） · Agent Workflow · XML / OOXML · Human-in-the-loop"
+        duration: "进行中"
+        bullets:
+          - "将传统 Word 翻译工程化：设计<strong>原稿 → 结构化 XML → Agent 分片翻译 → 自动 QA / Git 冻结 → DOCX → 人工审校 → OOXML 反馈回流</strong>的可测试、可审计闭环；通过 glossary、规则优先级与受保护文件机制保证术语一致、人工决策不被覆盖，并支持跨模型 / 环境迁移。"
+          - "构建块级覆盖、代码 / URL 保真、XML 合法性及 tracked changes 提取工具；第 9 章处理 <strong>1,176 个源块、1,030 个代码片段、51 个 URL、3 张图片</strong>并稳定生成可交付 DOCX，出版社修改主要集中于格式规范而非大规模重译。"
+
+
   - type: projects
     name: "竞赛与算法项目"
     content:
