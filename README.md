@@ -80,9 +80,10 @@
 ## 高级用法
 
 ### 导出 PDF
-1. 浏览器(推荐chrome)点击页面底部`打印`
-2. 选择打印为PDF文档
-3. 配置打印设置(布局样式,字体大小,边距等) [_config.yml](https://github.com/NewFuture/CV/blob/gh-pages/_config.yml#L6)
+1. 使用 Safari（推荐）或 Chrome 打开简历并选择“打印 / Save as PDF”。
+2. 纸张选择 **A4**，方向选择 **纵向**，缩放保持 **100%**。
+3. 关闭浏览器的 **Headers and footers（页眉和页脚）**，避免自动添加日期、标题、URL 和页码。这些属于浏览器打印设置，网页 CSS 无法可靠关闭。
+4. 页面边距与排版由 print stylesheet 控制，无需手动缩放。
 
 ### 本地调试
 1. 安装[jekyll](http://jekyllcn.com/docs/installation/)

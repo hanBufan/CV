@@ -74,33 +74,31 @@ layout: default
         <h2 class="subject">{{ list.name | default: list.type }}</h2>
         <div class="content">
           {% for content in list.content %}
-          <article class="block">
+          <article class="block{% if content.featured %} featured{% endif %}">
 
-            <div class="head">
-              {% if content.url.size > 0 %}
-                <h3 class="title"><a href="{{content.url}}" target="_blank">{{ content.title }}</a></h3>
-              {% else %}
-                <h3 class="title">{{ content.title }}</h3>
-              {% endif %} 
-              {% if content.sub.size > 0 %}
-                <h4 class="sub">{{ content.sub }}</h4>
-              {% endif %}
-            </div>
-
-            <div class="info">
-              {% if content.tags.size > 0 %}
-              <div class="tag">
-                {% for tag in content.tags %}
-                <code>{{ tag }}</code>
-                {% endfor %}
+            <div class="entry-heading">
+              <div class="entry-copy head">
+                {% if content.url.size > 0 %}
+                  <h3 class="title"><a href="{{content.url}}" target="_blank">{{ content.title }}</a></h3>
+                {% else %}
+                  <h3 class="title">{{ content.title }}</h3>
+                {% endif %}
+                {% if content.sub.size > 0 %}
+                  <h4 class="sub">{{ content.sub }}</h4>
+                {% endif %}
               </div>
-              {% endif %}
               {% if content.duration.size > 0 %}
-               <i class="time">{{ content.duration }}</i>
+                <time class="entry-date time">{{ content.duration }}</time>
               {% endif %}
             </div>
 
-            {% if content.detail.size > 0 %}
+            {% if content.bullets %}
+              <ul class="detail bullets">
+                {% for bullet in content.bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            {% elsif content.detail.size > 0 %}
               {% comment %} 解析markdown文件 {% endcomment %}
               {% if content.detail.md %}
                 {% capture md %}{% include_relative {{content.detail.md}} %}{% endcapture %}

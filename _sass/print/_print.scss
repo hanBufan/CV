@@ -1,111 +1,294 @@
-/*打印必用css设置*/
-
-/*页面基本设置*/
 @page {
-  /* auto is the initial value */
-  size: auto;
-  margin: $print-page-margin; // this affects the margin in 
+  size: A4 portrait;
+  margin: 8mm 9mm;
 }
 
-@page:blank {
-  display: none;
-}
-
-/*打印设置*/
-.screen {
-  display: none;
-}
-
-.print {
-  display: block;
-}
-
-/*文档范围*/
 html,
 body {
-  background: inherit;
-  border: 0;
-  color: #111;
-  font-size: $print-font-size;
+  width: auto;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
   padding: 0;
+  overflow: visible;
+  border: 0;
+  background: #fff;
+  box-shadow: none;
+  color: #111;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  box-shadow: none !important;
+}
+
+.screen,
+footer,
+footer.print {
+  display: none !important;
 }
 
 header,
 main {
-  width: 90%;
+  width: 100%;
+  margin: 0;
 }
 
-/*链接*/
-a,
-a:visited {
-  border-bottom: 0;
-  text-decoration: underline;
-}
+header {
+  display: grid;
+  grid-template-areas:
+    "name avatar"
+    "contact avatar";
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 5mm;
+  padding: 0 0 2.2mm;
+  border-bottom: .5pt solid #333;
 
-h3 a {
-  text-decoration: none;
-}
-
-/*头像*/
-.avatar {
-  max-width: 30%;
-
-  img {
-    border-radius: 1%;
-  }
-}
-
-/*分页设置*/
-img,
-article,
-footer,
-ul,
-li,
-p,
-.detail,
-footer {
-  page-break-inside: avoid;
-}
-
-/*隐藏脚注*/
-footer {
-  border-top-style: solid;
-  color: #999;
-  margin: $print-footer-top / 2 0 0;
-  padding: $print-footer-top 0 0;
-  page-break-before: avoid;
-
-  ul,
-  li {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    line-height: 2em;
-    margin: 0;
+  #name {
+    grid-area: name;
+    display: block;
+    min-width: 0;
+    text-align: left;
   }
 
-  li {
-    margin: 0 2em;
-    flex-direction: column;
+  h1 {
+    display: block;
+    margin: 0 0 1mm;
+    color: #111;
+    font-size: 21pt;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .04em;
+  }
 
-    &:not(:last-child)::after {
-      content: '';
-      padding: 0;
+  .jobtitle {
+    display: none;
+  }
+
+  .avatar {
+    grid-area: avatar;
+    display: block;
+    width: 16mm;
+    max-width: none;
+    height: 21mm;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 1mm;
     }
   }
-}
 
-/*summary*/
-summary {
-  color: #111 !important;
-  margin: 0 0 0 .8em !important;
+  .contact {
+    grid-area: contact;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .5mm 3.2mm;
+    margin: 0;
+    font-size: 8pt;
+    font-style: normal;
+    line-height: 1.2;
+  }
 
-  &::after {
+  .contact-item {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .contact-item svg,
+  .contact-item .icon {
     display: none;
   }
 }
 
-/*color*/
-.name {
-  color: #000;
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+main {
+  padding-top: .7mm;
+}
+
+section {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1.65mm 0 0;
+  border: 0 !important;
+  text-align: left;
+
+  h2.subject {
+    display: block;
+    width: 100% !important;
+    margin: 0 0 .8mm;
+    padding: 0 0 .45mm;
+    border-bottom: .45pt solid #888;
+    color: #111;
+    font-size: 11.2pt;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    letter-spacing: .05em;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.block {
+  display: block;
+  margin: 0;
+  padding: .8mm 0 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+
+  &:not(:first-child) {
+    padding-top: 1.35mm;
+  }
+}
+
+.entry-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0 3mm;
+  min-width: 0;
+}
+
+.entry-copy,
+.head {
+  display: block;
+  min-width: 0;
+}
+
+.head .title {
+  display: block;
+  margin: 0;
+  color: #111;
+  font-size: 10.4pt;
+  font-weight: 650;
+  line-height: 1.18;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.head .sub {
+  display: block;
+  margin: .35mm 0 0;
+  color: #333;
+  font-size: 8.25pt;
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: left;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.entry-date,
+.time {
+  align-self: start;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #333;
+  font-size: 8.1pt;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.detail,
+.bullets {
+  margin: .55mm 0 0;
+  padding: 0 0 0 3.7mm;
+  background: transparent !important;
+  color: #111;
+  font-size: 8.65pt;
+  font-weight: 400;
+  line-height: 1.29;
+  text-indent: 0;
+  overflow-wrap: anywhere;
+  word-break: normal !important;
+}
+
+.bullets li {
+  margin: 0;
+  padding-left: .35mm;
+  text-indent: 0;
+
+  & + li {
+    margin-top: .45mm;
+  }
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.featured .head .title {
+  font-size: 10.8pt;
+}
+
+#skills {
+  padding-top: 1.5mm;
+
+  .block,
+  .block:not(:first-child) {
+    display: grid;
+    grid-template-columns: 13mm minmax(0, 1fr);
+    gap: 1.5mm;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .entry-heading {
+    display: block;
+  }
+
+  .head .title {
+    font-size: 8.5pt;
+    font-weight: 650;
+  }
+
+  .summary {
+    margin: 0;
+    font-size: 8.35pt;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+}
+
+img,
+article,
+ul,
+li {
+  page-break-inside: avoid;
 }

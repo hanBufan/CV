@@ -29,11 +29,11 @@ main:
     name: "教育经历"
     content:
       - title: "复旦大学"
-        duration: "2022年09月 - 2027年06月"
-        sub: "本科 | 英语语言文学 + 物理"
-        detail: >
-          核心课程：量子力学、电动力学、统计物理、概率论与数理统计、高等数学 A。<br>
-          托福 115，GRE 333；2023、2024 年中国大学生英语辩论赛（CUDC）全国一等奖。
+        duration: "2022.09 – 2027.06"
+        sub: "英语语言文学 + 物理 · 本科"
+        bullets:
+          - "托福 <strong>115</strong> · GRE <strong>333</strong> · CUDC 全国一等奖（2023 / 2024）"
+          - "课程：量子力学 · 电动力学 · 统计物理 · 概率论与数理统计 · 高等数学 A"
 
 
   - type: experience
@@ -41,11 +41,11 @@ main:
     content:
       - title: "产品经理实习生"
         sub: "字节跳动 · 国际支付 · TikTok Pay / Payment Service"
-        duration: "2026年04月 - 至今"
-        detail: >
-          <b>任务：</b>作为主 PM 从 0 到 1 负责马来西亚（MY）TTPay Balance 钱包金融还款新场景，拓展余额支用范围，提升钱包 TPV 渗透与资金留存。<br>
-          <b>行动：</b>独立撰写 PRD，与设计师共同完成收银台及钱包支付交互；牵头 Trade、收银台、金融、Treasury、Finance、账单等产品及研发团队，设计多主体资金流方案；作为 Payment Compliance 主要对接人完成业务方案说明、风险问题响应及替代方案设计，推动项目通过评审并上线。<br>
-          <b>结果：</b>7月14日开始灰度、7月31日全量上线；截至 8 月累计覆盖 <b>50K+ 用户</b>、约 <b>500K 金融还款</b>。A/B 实验带动 MY TTPay 钱包交易量 <b>+5%</b>、余额支付渗透率 <b>+22.3%</b>、支付成功率 <b>+1.17%</b>；用户充值入金率 <b>+12.11%</b>、人均充值金额 <b>+23.63%</b>，提现率 <b>-18.8%</b>、人均提现金额 <b>-20.0%</b>；BNPL/Ploan 及电商核心护栏指标无显著负向影响。
+        duration: "2026.04 – 至今"
+        featured: true
+        bullets:
+          - "主 PM 从 <strong>0→1</strong> 负责 MY TTPay Balance 金融还款新场景；独立撰写 PRD，与设计师完成 UI / UX，牵头 Trade、收银台、金融、Treasury、Finance、账单等产品与研发，设计多主体资金流；作为 Payment Compliance 主要对接人解释需求、响应问题并提出替代方案，推动评审与上线。"
+          - "<strong>7/14 灰度、7/31 全量</strong>；覆盖 <strong>50K+ 用户 / ~500K 笔还款 / USD 500K 还款金额</strong>。A/B：钱包交易量 <strong>+5%</strong> · Balance 渗透率 <strong>+22.3%</strong> · PSR <strong>+1.17%</strong> · 充值率 <strong>+12.11%</strong> · 人均充值 <strong>+23.63%</strong> · 提现率 <strong>-18.8%</strong> · 人均提现 <strong>-20.0%</strong>；BNPL / Ploan / 电商护栏无显著负向。"
 
 
   - type: projects
@@ -53,30 +53,25 @@ main:
     content:
 
       - title: "NVIDIA Nemotron Model Reasoning Challenge"
-        duration: "2026年06月 - 2026年08月"
-        sub: "大语言模型推理微调 | Kaggle 银牌 · 71 / 4182（Top 1.7%）"
-        detail: >
-          <b>任务：</b>基于 NVIDIA Nemotron 30B-A3B 提升模型在抽象推理任务上的准确率。<br>
-          <b>行动：</b>编写代码自动构建 Synthetic Reasoning Traces，设计 YAML 推理数据格式与训练流程，并基于生成数据提交 LoRA 微调模型。<br>
-          <b>结果：</b>将 benchmark 准确率由 Base Model 的 <b>0.60 提升至 0.86</b>，最终排名 <b>71 / 4182</b>，获得 Kaggle 银牌。
+        duration: "2026.06 – 2026.08"
+        sub: "LLM 推理微调 · Kaggle Silver · 71 / 4182 · Top 1.7%"
+        bullets:
+          - "为提升抽象推理，自动构建 Synthetic Reasoning Traces 与 YAML 数据 / 训练 Pipeline；基于 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，准确率 <strong>0.60 → 0.86</strong>，最终 <strong>71 / 4182</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
-        duration: "2025年09月 - 2025年12月"
-        sub: "物理感知时空序列建模 | Kaggle 银牌 · 33 / 1899（Top 1.7%）"
-        detail: >
-          <b>任务：</b>预测传球过程中 NFL 球员未来运动轨迹，解决多人交互、运动惯性及长时序轨迹预测问题。<br>
-          <b>行动：</b>提出 Chiral Augmentation（Random Y-Flip）引入球场镜像对称先验；优化 STTRE 时空 Transformer，引入 Relative Role Bias、Gated Fusion 与辅助速度损失；设计 Polar Vector Ensemble，在极坐标空间融合速度幅值与运动方向，并集成 STTRE、GNN 与 Bi-GRU。<br>
-          <b>结果：</b>实现 Public LB <b>0.519</b>，最终全球排名 <b>33 / 1899</b>，获得 Kaggle 银牌。
+        duration: "2025.09 – 2025.12"
+        sub: "物理感知时空建模 · Kaggle Silver · 33 / 1899 · Top 1.7%"
+        bullets:
+          - "以 Chiral Augmentation（Random Y-Flip）引入球场对称先验；在 STTRE 中加入 Relative Role Bias、Gated Fusion 与 Auxiliary Velocity Loss。"
+          - "以 Polar Vector Ensemble 融合 STTRE / GNN / Bi-GRU，Public LB <strong>0.519</strong>，最终 <strong>33 / 1899</strong>。"
 
 
       - title: "Vesuvius Challenge - Surface Detection"
-        duration: "2025年12月 - 2026年02月"
-        sub: "3D 计算机视觉 | Kaggle 银牌 · 69 / 1391（Top 5%）"
-        detail: >
-          <b>任务：</b>从大规模低对比度 3D X 射线体素中识别碳化古卷轴表面，为虚拟展开与隐藏文字复原提供分割结果。<br>
-          <b>行动：</b>基于 PyTorch 构建 3D 语义分割训练流程，针对低对比度体素优化特征提取与数据 Pipeline，并使用 DDP 完成多 GPU 分布式训练与快速实验迭代。<br>
-          <b>结果：</b>最终全球排名 <b>69 / 1391</b>，获得 Kaggle 银牌。
+        duration: "2025.12 – 2026.02"
+        sub: "3D Computer Vision · Kaggle Silver · 69 / 1391 · Top 5%"
+        bullets:
+          - "面向低对比度 3D X-ray voxel，以 PyTorch 构建 3D segmentation Pipeline，并用 DDP / multi-GPU 加速迭代；最终 <strong>69 / 1391</strong>。"
 
 
   - type: skills
@@ -84,10 +79,10 @@ main:
     content:
 
       - title: "产品"
-        summary: "PRD / 支付流程与资金流设计 / A/B Testing / 跨团队项目推进 / Payment Compliance"
+        summary: "PRD · Payment / Fund Flow · A/B Testing · Payment Compliance · 跨团队推进"
 
       - title: "技术"
-        summary: "Python / SQL / PyTorch / Linux / Git / Docker / CUDA / DDP"
+        summary: "Python · SQL · PyTorch · Linux · Git · Docker · CUDA / DDP"
 
       - title: "语言"
-        summary: "托福 115 / GRE 333 / 英文工作与跨文化沟通"
+        summary: "TOEFL 115 · GRE 333 · English working proficiency"

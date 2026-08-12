@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .worktrees/
+_preview.html
+resume-page.png

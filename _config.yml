@@ -8,12 +8,12 @@ subject-width: 20% #左边栏宽度
 print:
   # 打印样式模板,
   template: 'basic' 
-  # 字体大小：调大至 14px（如果14px还是不够清晰，可以尝试 15px）
-  fontsize: 15px
+  # Print typography is controlled by the dedicated A4 stylesheet.
+  fontsize: 9pt
   # 颜色：添加纯黑色以提高对比度（部分模板原生支持此配置）
   color: '#000000'
   #页面边距设置，3~5mm为佳[不建议修改]
-  page-margin: '6mm 5mm 3mm' #上，右(无同上)，下(无同上)，左（无同右）
+  page-margin: '8mm 9mm'
   #也顶部(姓名栏目)边距偏移
   header-padding: '8mm 0 3mm'
   #每块设置(对应main里面每一条)
