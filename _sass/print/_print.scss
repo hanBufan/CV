@@ -16,9 +16,9 @@ body {
   box-shadow: none;
   color: #111;
   font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
-  font-size: 12pt;
+  font-size: 10.5pt;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.25;
   text-align: left;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -78,9 +78,9 @@ header {
   .avatar {
     grid-area: avatar;
     display: block;
-    width: 21mm;
+    width: 20mm;
     max-width: none;
-    height: 28mm;
+    height: 26mm;
     overflow: hidden;
 
     img {
@@ -100,7 +100,7 @@ header {
     justify-content: flex-start;
     gap: .5mm 3.2mm;
     margin: 0;
-    font-size: 10.2pt;
+    font-size: 9.2pt;
     font-style: normal;
     line-height: 1.2;
   }
@@ -125,25 +125,25 @@ a:visited {
 }
 
 main {
-  padding-top: .7mm;
+  padding-top: .4mm;
 }
 
 section {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 1.65mm 0 0;
+  padding: 1.25mm 0 0;
   border: 0 !important;
   text-align: left;
 
   h2.subject {
     display: block;
     width: 100% !important;
-    margin: 0 0 .8mm;
+    margin: 0 0 .55mm;
     padding: 0 0 .45mm;
     border-bottom: .45pt solid #888;
     color: #111;
-    font-size: 13pt;
+    font-size: 11.8pt;
     font-weight: 700;
     line-height: 1.1;
     text-align: left;
@@ -161,12 +161,12 @@ section {
 .block {
   display: block;
   margin: 0;
-  padding: .8mm 0 0;
+  padding: .55mm 0 0;
   break-inside: avoid;
   page-break-inside: avoid;
 
   &:not(:first-child) {
-    padding-top: 1.35mm;
+    padding-top: .9mm;
   }
 }
 
@@ -188,7 +188,7 @@ section {
   display: block;
   margin: 0;
   color: #111;
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 650;
   line-height: 1.18;
   overflow-wrap: normal;
@@ -199,7 +199,7 @@ section {
   display: block;
   margin: .35mm 0 0;
   color: #333;
-  font-size: 10.2pt;
+  font-size: 9.3pt;
   font-weight: 500;
   line-height: 1.18;
   text-align: left;
@@ -212,11 +212,11 @@ section {
   align-self: start;
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
   color: #333;
-  font-size: 10pt;
+  font-size: 9.2pt;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
@@ -226,13 +226,13 @@ section {
 
 .detail,
 .bullets {
-  margin: .55mm 0 0;
+  margin: .4mm 0 0;
   padding: 0 0 0 3.7mm;
   background: transparent !important;
   color: #111;
-  font-size: 12pt;
+  font-size: 10.5pt;
   font-weight: 400;
-  line-height: 1.29;
+  line-height: 1.25;
   text-indent: 0;
   overflow-wrap: anywhere;
   word-break: normal !important;
@@ -244,7 +244,7 @@ section {
   text-indent: 0;
 
   & + li {
-    margin-top: .45mm;
+    margin-top: .25mm;
   }
 }
 
@@ -254,11 +254,11 @@ b {
 }
 
 .featured .head .title {
-  font-size: 12.4pt;
+  font-size: 11.4pt;
 }
 
 #skills {
-  padding-top: 1.5mm;
+  padding-top: 1.1mm;
 
   .block,
   .block:not(:first-child) {
@@ -274,13 +274,13 @@ b {
   }
 
   .head .title {
-    font-size: 10.5pt;
+    font-size: 9.7pt;
     font-weight: 650;
   }
 
   .summary {
     margin: 0;
-    font-size: 10.3pt;
+    font-size: 9.55pt;
     font-weight: 400;
     line-height: 1.25;
   }
