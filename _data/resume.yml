@@ -61,26 +61,26 @@ main:
 
 
   - type: projects
-    name: "竞赛与算法项目"
+    name: "Kaggle 竞赛项目 · 三枚银牌"
     content:
 
       - title: "NVIDIA Nemotron Model Reasoning Challenge"
         duration: "2026.04 – 2026.06"
-        sub: "大语言模型推理微调 / Synthetic Data · Kaggle Silver · 71 / 4182 · Top 1.7%"
+        sub: "大语言模型推理微调 / Synthetic Data · Kaggle 银牌 · 71 / 4182 · Top 1.7%"
         bullets:
           - "为提升模型在抽象推理任务上的表现，自动构建包含推理过程的训练数据，并对 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，将准确率从 <strong>0.60 提升至 0.86</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
         duration: "2025.10 – 2025.12"
-        sub: "时空序列建模 / 多模型融合 · Kaggle Silver · 33 / 1899 · Top 1.7%"
+        sub: "时空序列建模 / 多模型融合 · Kaggle 银牌 · 33 / 1899 · Top 1.7%"
         bullets:
           - "针对球员轨迹预测中的球场对称性、角色互动与运动惯性，设计镜像数据增强和时空建模方案，并融合 STTRE、GNN 与 Bi-GRU 三个互补模型；Public LB 达 <strong>0.519</strong>。"
 
 
       - title: "Vesuvius Challenge - Surface Detection"
         duration: "2025.12 – 2026.02"
-        sub: "3D Computer Vision / 分布式训练 · Kaggle Silver · 69 / 1391 · Top 5%"
+        sub: "3D Computer Vision / 分布式训练 · Kaggle 银牌 · 69 / 1391 · Top 5%"
         bullets:
           - "为从低对比度 3D X-ray 体素中识别碳化卷轴表面，使用 PyTorch 搭建 3D 分割训练流程，并通过 DDP 多 GPU 训练加快实验迭代，为虚拟展开提供分割结果。"
 
