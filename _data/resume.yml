@@ -1,97 +1,93 @@
-# 数据格式为 yaml (文件以 .yml 结尾)
 title: "韩步凡的简历"
-lang: "zh" 
+lang: "zh"
 name: "韩步凡"
-photo: "assets/img/photo.jpg" # 照片可空，不显示
+photo: "assets/img/photo.jpg"
 
-contact: 
+contact:
   - text: "22300120126@m.fudan.edu.cn"
-    href: 'mailto:22300120126@m.fudan.edu.cn'
-    icon: 'icons/email.svg'
+    href: "mailto:22300120126@m.fudan.edu.cn"
+    icon: "icons/email.svg"
+
   - text: "13918565541"
-    href: 'tel:13918565541'
-    icon: 'icons/phone.svg'
+    href: "tel:13918565541"
+    icon: "icons/phone.svg"
+
   - text: "kaggle.com/hsiaosuan"
-    href: 'https://www.kaggle.com/hsiaosuan'
-    icon: 'icons/web.svg' 
-    attr: 'target="_blank"'
-  - text: "github.com/hanBufan"
-    href: 'https://github.com/hanBufan/'
-    icon: 'icons/github.svg'
+    href: "https://www.kaggle.com/hsiaosuan"
+    icon: "icons/web.svg"
     attr: 'target="_blank"'
 
-main: 
-  - type: education 
-    name: 教育经历 
-    content: 
-      - title: 复旦大学
+  - text: "github.com/hanBufan"
+    href: "https://github.com/hanBufan/"
+    icon: "icons/github.svg"
+    attr: 'target="_blank"'
+
+
+main:
+
+  - type: education
+    name: "教育经历"
+    content:
+      - title: "复旦大学"
         duration: "2022年09月 - 2027年06月"
-        sub: "本科 | 英语 + 物理"
-        detail: "核心课程：量子力学、电动力学、统计物理、概率论与数理统计、高等数学A。<br>语言成绩：托福 115分，GRE 333分，具备全英文学术工作及无障碍沟通能力。<br>荣誉奖项：2023年 & 2024年中国大学生英语辩论赛（CUDC）全国一等奖。"
+        sub: "本科 | 英语语言文学 + 物理"
+        detail: >
+          核心课程：量子力学、电动力学、统计物理、概率论与数理统计、高等数学 A。<br>
+          托福 115，GRE 333；2023、2024 年中国大学生英语辩论赛（CUDC）全国一等奖。
+
+
+  - type: experience
+    name: "实习经历"
+    content:
+      - title: "产品经理实习生"
+        sub: "字节跳动 · 国际支付 · TikTok Pay / Payment Service"
+        duration: "2026年04月 - 至今"
+        detail: >
+          <b>任务：</b>作为主 PM 从 0 到 1 负责马来西亚（MY）TTPay Balance 钱包金融还款新场景，拓展余额支用范围，提升钱包 TPV 渗透与资金留存。<br>
+          <b>行动：</b>独立撰写 PRD，与设计师共同完成收银台及钱包支付交互；牵头 Trade、收银台、金融、Treasury、Finance、账单等产品及研发团队，设计多主体资金流方案；作为 Payment Compliance 主要对接人完成业务方案说明、风险问题响应及替代方案设计，推动项目通过评审并上线。<br>
+          <b>结果：</b>7月14日开始灰度、7月31日全量上线；截至 8 月累计覆盖 <b>50K+ 用户</b>、约 <b>500K 金融还款</b>。A/B 实验带动 MY TTPay 钱包交易量 <b>+5%</b>、余额支付渗透率 <b>+22.3%</b>、支付成功率 <b>+1.17%</b>；用户充值入金率 <b>+12.11%</b>、人均充值金额 <b>+23.63%</b>，提现率 <b>-18.8%</b>、人均提现金额 <b>-20.0%</b>；BNPL/Ploan 及电商核心护栏指标无显著负向影响。
+
+
+  - type: projects
+    name: "竞赛与算法项目"
+    content:
+
+      - title: "NVIDIA Nemotron Model Reasoning Challenge"
+        duration: "2026年06月 - 2026年08月"
+        sub: "大语言模型推理微调 | Kaggle 银牌 · 71 / 4182（Top 1.7%）"
+        detail: >
+          <b>任务：</b>基于 NVIDIA Nemotron 30B-A3B 提升模型在抽象推理任务上的准确率。<br>
+          <b>行动：</b>编写代码自动构建 Synthetic Reasoning Traces，设计 YAML 推理数据格式与训练流程，并基于生成数据提交 LoRA 微调模型。<br>
+          <b>结果：</b>将 benchmark 准确率由 Base Model 的 <b>0.60 提升至 0.86</b>，最终排名 <b>71 / 4182</b>，获得 Kaggle 银牌。
+
+
+      - title: "Kaggle NFL Big Data Bowl 2026"
+        duration: "2025年09月 - 2025年12月"
+        sub: "物理感知时空序列建模 | Kaggle 银牌 · 33 / 1899（Top 1.7%）"
+        detail: >
+          <b>任务：</b>预测传球过程中 NFL 球员未来运动轨迹，解决多人交互、运动惯性及长时序轨迹预测问题。<br>
+          <b>行动：</b>提出 Chiral Augmentation（Random Y-Flip）引入球场镜像对称先验；优化 STTRE 时空 Transformer，引入 Relative Role Bias、Gated Fusion 与辅助速度损失；设计 Polar Vector Ensemble，在极坐标空间融合速度幅值与运动方向，并集成 STTRE、GNN 与 Bi-GRU。<br>
+          <b>结果：</b>实现 Public LB <b>0.519</b>，最终全球排名 <b>33 / 1899</b>，获得 Kaggle 银牌。
+
+
+      - title: "Vesuvius Challenge - Surface Detection"
+        duration: "2025年12月 - 2026年02月"
+        sub: "3D 计算机视觉 | Kaggle 银牌 · 69 / 1391（Top 5%）"
+        detail: >
+          <b>任务：</b>从大规模低对比度 3D X 射线体素中识别碳化古卷轴表面，为虚拟展开与隐藏文字复原提供分割结果。<br>
+          <b>行动：</b>基于 PyTorch 构建 3D 语义分割训练流程，针对低对比度体素优化特征提取与数据 Pipeline，并使用 DDP 完成多 GPU 分布式训练与快速实验迭代。<br>
+          <b>结果：</b>最终全球排名 <b>69 / 1391</b>，获得 Kaggle 银牌。
+
 
   - type: skills
     name: "专业技能"
     content:
-      - title: 编程语言
-        items: 
-          - Python
-          - SQL
-      - title: 算法与框架
-        summary: "熟练掌握 PyTorch 开发；熟悉深度学习模型构建、特征工程、复杂时序预测及模型集成策略（软硬投票、中位数融合等）。"
-      - title: 工程与环境
-        summary: "熟练使用 Linux、Git，具备使用 Docker 部署深度学习容器、管理 CUDA 依赖及优化多 GPU 计算环境的实战经验。"
-      - title: 外语与沟通
-        summary: "托福 115 分，GRE 333 分，具备卓越的全英文学术与工作能力。曾获全国英语辩论赛一等奖，拥有出色的逻辑思辨与跨文化协作力，能将复杂的算法模型与技术框架高效转化为直观的业务洞察。"
-        
 
-  - type: projects
-    name: 科研与项目经历
-    content:
-      - title: 基于依存句法树掩码的扩散语言模型 (LLaDA) 训练研究
-        duration: "进行中" # 或者改成 "Ongoing" 如果你更喜欢英文状态
-        sub: "本科生科研课题"
-        detail: "探索语言学句法先验对扩散语言模型预训练的增益。通过在固定规模数据集（BabyLM）上控制变量，系统性地评估了自顶向下、自底向上及子树等结构化掩码策略。独立完成底层数据到 Hugging Face Dataset 的转化，优化了前向传播与训练 Pipeline，为语言学先验的有效性提供了坚实的实验基准。"
-      - title: Kaggle 维苏威火山卷轴虚拟展开代码竞赛
-        duration: "2025年12月 - 2026年02月"
-        sub: "计算机视觉算法开发 / 银牌 (69/1293)"
-        detail: "针对大规模 3D X 射线体素数据，基于 PyTorch 构建 3D 语义分割与油墨检测模型，复原碳化古卷轴隐藏文字。攻克低对比度环境下的特征提取难题，利用在早期项目中沉淀的实验框架实现快速迭代。引入 DDP 技术在多 GPU 环境下进行分布式训练，大幅缩短模型收敛周期。"
-      - title: Kaggle NFL 大数据超级碗：橄榄球球员轨迹预测竞赛
-        duration: "2025年09月 - 2025年12月"
-        sub: "时间序列算法开发 / 银牌 (33/1800)"
-        detail: "基于 PyTorch 构建时空 Transformer 预测模型，分析 NFL 比赛中复杂的高维时空遥测数据。复用并优化了此前积累的快速迭代实验体系，高效提取球员运动轨迹与战术意图的时序依赖关系。通过对历史数据的深度挖掘与模型交叉验证，显著提升预测准确性。"
-      - title: Kaggle CMI 手势状态检测
-        duration: "2025年06月 - 2025年09月"
-        sub: "核心成员 / Top 11% (304/2800)"
-        detail: "独立承担 IMU/TOF/THM 传感器数据的特征提取与多分支深度学习网络构建，个人单次提交成绩达到铜牌标准线。从 0 到 1 搭建了针对表格数据的快速实验迭代与记录 Pipeline。创新提出权重枚举方法并入团队代码库，结合 SGKF 交叉验证与多维集成推理策略，显著提升模型鲁棒性。"
+      - title: "产品"
+        summary: "PRD / 支付流程与资金流设计 / A/B Testing / 跨团队项目推进 / Payment Compliance"
 
-  - type: experience
-    name: 实习经历
-    content:
-      - title: 产品经理实习生
-        sub: "字节跳动 · 国际支付部门 · TikTok Pay"
-        duration: "2026年04月 - 至今"
+      - title: "技术"
+        summary: "Python / SQL / PyTorch / Linux / Git / Docker / CUDA / DDP"
 
-  - type: experience
-    name: 综合素养与研究经历
-    content:
-      - title: 研究员
-        sub: "复旦大学国家级社科项目：欧洲中国学"
-        duration: "2023年全年"
-        summary: "参与国家级社会科学基金项目，负责海量中英多语种文献的整理、交叉比对与信息提炼。"
-        detail: "独立撰写并发表相关外交评论文章，展现了极强的学术研究能力、严密的逻辑思辨以及将复杂社科概念结构化的写作能力。"
-      - title: 副社长
-        sub: "复旦大学英语辩论协会 (FEDS)"
-        duration: "2023年09月 - 2024年09月"
-        summary: "负责社团百人规模的日常运营，组织并裁判每周辩论友谊赛；主讲辩论技巧与逻辑建构课程。"
-        detail: "运营社团微信公众号，负责对外宣发与活动总结，提升了团队领导力与跨文化公众表达能力。"
-
-others: 
-  - type: others 
-    name: '个人总结'
-    content: 
-      - text: "复旦大学英语与物理复合背景，兼具硬核数据技术与卓越的沟通逻辑。精通 PyTorch 及 Kaggle 竞赛实战，擅长处理复杂时序数据与计算机视觉任务。具备出色的跨文化协作、文献研究与思辨表达能力，能高效将算法思维转化为量化策略与业务洞察，推动数据产品落地。"
-
-footer: 
-  print: 
-  screen:
-    - text: "Made with ❤️"
+      - title: "语言"
+        summary: "托福 115 / GRE 333 / 英文工作与跨文化沟通"
