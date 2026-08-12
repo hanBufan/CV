@@ -56,14 +56,14 @@ main:
         duration: "2026.06 – 2026.08"
         sub: "LLM 推理微调 · Kaggle Silver · 71 / 4182 · Top 1.7%"
         bullets:
-          - "为提升抽象推理，自动构建 Synthetic Reasoning Traces 与 YAML 数据 / 训练 Pipeline；基于 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，准确率 <strong>0.60 → 0.86</strong>，最终 <strong>71 / 4182</strong>。"
+          - "为提升模型的抽象推理能力，自动构建 Synthetic Reasoning Traces 与 YAML 数据 / 训练 Pipeline；基于 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，准确率 <strong>0.60 → 0.86</strong>，最终 <strong>71 / 4182</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
         duration: "2025.09 – 2025.12"
         sub: "物理感知时空建模 · Kaggle Silver · 33 / 1899 · Top 1.7%"
         bullets:
-          - "以 Chiral Augmentation（Random Y-Flip）引入球场对称先验；在 STTRE 中加入 Relative Role Bias、Gated Fusion 与 Auxiliary Velocity Loss。"
+          - "预测传球过程中球员的未来运动轨迹；以 Chiral Augmentation（Random Y-Flip）引入球场对称先验，并在 STTRE 中加入 Relative Role Bias、Gated Fusion 与 Auxiliary Velocity Loss。"
           - "以 Polar Vector Ensemble 融合 STTRE / GNN / Bi-GRU，Public LB <strong>0.519</strong>，最终 <strong>33 / 1899</strong>。"
 
 
@@ -71,7 +71,7 @@ main:
         duration: "2025.12 – 2026.02"
         sub: "3D Computer Vision · Kaggle Silver · 69 / 1391 · Top 5%"
         bullets:
-          - "面向低对比度 3D X-ray voxel，以 PyTorch 构建 3D segmentation Pipeline，并用 DDP / multi-GPU 加速迭代；最终 <strong>69 / 1391</strong>。"
+          - "从低对比度 3D X-ray voxel 分割碳化卷轴表面，支持虚拟展开；以 PyTorch 构建 3D segmentation Pipeline，并用 DDP / multi-GPU 加速迭代，最终 <strong>69 / 1391</strong>。"
 
 
   - type: skills
