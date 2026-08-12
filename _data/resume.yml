@@ -40,7 +40,7 @@ main:
     name: "实习经历"
     content:
       - title: "产品经理实习生"
-        sub: "字节跳动 · 国际支付 · TikTok Pay / Payment Service"
+        sub: "字节跳动 · 国际支付产品 · TikTok Pay / Payment Service"
         duration: "2026.04 – 2026.07"
         featured: true
         bullets:
@@ -53,7 +53,7 @@ main:
     name: "AI 产品与 Agent 项目"
     content:
       - title: "Human + Agent 技术图书翻译流水线"
-        sub: "人民邮电出版社 · The Kaggle Book 2nd Edition"
+        sub: "AI Agent 工作流 / Human-in-the-loop · 人民邮电出版社 · The Kaggle Book 2nd Edition"
         duration: "2026.07 – 2026.08"
         bullets:
           - "为解决长篇技术书翻译中的漏译、术语漂移与 Word 格式损坏，设计“<strong>Agent 分片初译—自动校验—人工审校—出版社反馈回流</strong>”流程，并以 XML 中间层隔离翻译内容与 DOCX 排版，确保人工版本不被自动流程覆盖。"
@@ -66,21 +66,21 @@ main:
 
       - title: "NVIDIA Nemotron Model Reasoning Challenge"
         duration: "2026.04 – 2026.06"
-        sub: "LLM 推理微调 · Kaggle Silver · 71 / 4182 · Top 1.7%"
+        sub: "大语言模型推理微调 / Synthetic Data · Kaggle Silver · 71 / 4182 · Top 1.7%"
         bullets:
           - "为提升模型在抽象推理任务上的表现，自动构建包含推理过程的训练数据，并对 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，将准确率从 <strong>0.60 提升至 0.86</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
         duration: "2025.10 – 2025.12"
-        sub: "物理感知时空建模 · Kaggle Silver · 33 / 1899 · Top 1.7%"
+        sub: "时空序列建模 / 多模型融合 · Kaggle Silver · 33 / 1899 · Top 1.7%"
         bullets:
           - "针对球员轨迹预测中的球场对称性、角色互动与运动惯性，设计镜像数据增强和时空建模方案，并融合 STTRE、GNN 与 Bi-GRU 三个互补模型；Public LB 达 <strong>0.519</strong>。"
 
 
       - title: "Vesuvius Challenge - Surface Detection"
         duration: "2025.12 – 2026.02"
-        sub: "3D Computer Vision · Kaggle Silver · 69 / 1391 · Top 5%"
+        sub: "3D Computer Vision / 分布式训练 · Kaggle Silver · 69 / 1391 · Top 5%"
         bullets:
           - "为从低对比度 3D X-ray 体素中识别碳化卷轴表面，使用 PyTorch 搭建 3D 分割训练流程，并通过 DDP 多 GPU 训练加快实验迭代，为虚拟展开提供分割结果。"
 
