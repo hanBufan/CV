@@ -41,7 +41,7 @@ main:
     content:
       - title: "产品经理实习生"
         sub: "字节跳动 · 国际支付 · TikTok Pay / Payment Service"
-        duration: "2026.04 – 至今"
+        duration: "2026.04 – 2026.07"
         featured: true
         bullets:
           - "<strong>项目 Ownership：</strong>主 PM 从 <strong>0→1</strong> 负责 MY TTPay Balance 金融还款；独立撰写 PRD、与设计师完成 UI / UX，牵头 Trade、收银台、金融、Treasury、Finance、账单等产品研发，设计多主体资金流。"
@@ -55,7 +55,8 @@ main:
     name: "AI 产品与 Agent 项目"
     content:
       - title: "Human + Agent 技术图书翻译流水线"
-        sub: "人民邮电出版社 · The Kaggle Book 2nd Edition（进行中）"
+        sub: "人民邮电出版社 · The Kaggle Book 2nd Edition"
+        duration: "2026.07 – 2026.08"
         bullets:
           - "<strong>Agent Workflow：</strong>设计<strong>原稿 → XML → Agent 分片翻译 → 自动 QA / Git 冻结 → DOCX → 人工审校 → OOXML 反馈回流</strong>的 Human-in-the-loop 流水线；以 glossary、规则优先级和文件保护保证术语一致、过程可审计。"
           - "<strong>商业交付：</strong><strong>1 个月完成第 1–9 章、约 12.4 万中文字</strong>；第 9 章自动校验 <strong>1,176 个源块、1,030 个代码片段、51 个 URL、3 张图片</strong>并生成可交付 DOCX。"
@@ -66,14 +67,14 @@ main:
     content:
 
       - title: "NVIDIA Nemotron Model Reasoning Challenge"
-        duration: "2026.06 – 2026.08"
+        duration: "2026.04 – 2026.06"
         sub: "LLM 推理微调 · Kaggle Silver · 71 / 4182 · Top 1.7%"
         bullets:
           - "<strong>Reasoning Fine-tuning：</strong>自动构建 Synthetic Reasoning Traces 与 YAML 训练 Pipeline，基于 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调；准确率 <strong>0.60 → 0.86</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
-        duration: "2025.09 – 2025.12"
+        duration: "2025.10 – 2025.12"
         sub: "物理感知时空建模 · Kaggle Silver · 33 / 1899 · Top 1.7%"
         bullets:
           - "<strong>Spatiotemporal Modeling：</strong>以 Chiral Augmentation（Random Y-Flip）引入球场对称先验；在 STTRE 中加入 Relative Role Bias、Gated Fusion 与 Auxiliary Velocity Loss。"
