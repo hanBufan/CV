@@ -44,11 +44,9 @@ main:
         duration: "2026.04 – 2026.07"
         featured: true
         bullets:
-          - "<strong>项目 Ownership：</strong>主 PM 从 <strong>0→1</strong> 负责 MY TTPay Balance 金融还款；独立撰写 PRD、与设计师完成 UI / UX，牵头 Trade、收银台、金融、Treasury、Finance、账单等产品研发，设计多主体资金流。"
-          - "<strong>Payment Compliance：</strong>作为主要对接人解释需求、响应问题并提出替代方案，推动评审上线。"
-          - "<strong>上线与规模：</strong>7/14 灰度、7/31 全量；覆盖 <strong>50K+ 用户 / ~500K 笔还款 / USD 500K 还款金额</strong>。"
-          - "<strong>A/B 核心指标：</strong>钱包交易量 <strong>+5%</strong> · Balance 渗透率 <strong>+22.3%</strong> · PSR <strong>+1.17%</strong>。"
-          - "<strong>资金留存：</strong>充值率 <strong>+12.11%</strong> · 人均充值 <strong>+23.63%</strong> · 提现率 <strong>-18.8%</strong> · 人均提现 <strong>-20.0%</strong>；BNPL / Ploan / 电商护栏无显著负向。"
+          - "作为主 PM 从 <strong>0→1</strong> 负责马来西亚 TTPay Balance 偿还金融账单的新场景，拓展余额使用范围并提升钱包资金留存；独立完成 PRD，与设计师共同设计支付交互，协调支付、金融、资金、财务与账单团队，完成多主体资金流及 Payment Compliance 方案并推动上线。"
+          - "<strong>7/14 灰度、7/31 全量</strong>，覆盖 <strong>50K+ 用户、~500K 笔还款、USD 500K 还款金额</strong>；A/B 实验显示钱包交易量 <strong>+5%</strong>、余额支付渗透率 <strong>+22.3%</strong>、支付成功率 <strong>+1.17%</strong>。"
+          - "同时改善资金留存：充值率 <strong>+12.11%</strong>、人均充值 <strong>+23.63%</strong>，提现率 <strong>-18.8%</strong>、人均提现 <strong>-20.0%</strong>；BNPL、Ploan 与电商核心指标无显著负向。"
 
 
   - type: agent-project
@@ -58,8 +56,8 @@ main:
         sub: "人民邮电出版社 · The Kaggle Book 2nd Edition"
         duration: "2026.07 – 2026.08"
         bullets:
-          - "<strong>Agent Workflow：</strong>设计<strong>原稿 → XML → Agent 分片翻译 → 自动 QA / Git 冻结 → DOCX → 人工审校 → OOXML 反馈回流</strong>的 Human-in-the-loop 流水线；以 glossary、规则优先级和文件保护保证术语一致、过程可审计。"
-          - "<strong>商业交付：</strong><strong>1 个月完成第 1–9 章、约 12.4 万中文字</strong>；第 9 章自动校验 <strong>1,176 个源块、1,030 个代码片段、51 个 URL、3 张图片</strong>并生成可交付 DOCX。"
+          - "为解决长篇技术书翻译中的漏译、术语漂移与 Word 格式损坏，设计“<strong>Agent 分片初译—自动校验—人工审校—出版社反馈回流</strong>”流程，并以 XML 中间层隔离翻译内容与 DOCX 排版，确保人工版本不被自动流程覆盖。"
+          - "<strong>1 个月完成第 1–9 章、约 12.4 万中文字</strong>；第 9 章自动核对 <strong>1,176 个内容块、1,030 个代码片段、51 个 URL、3 张图片</strong>，稳定生成出版社可编辑的 DOCX。"
 
 
   - type: projects
@@ -70,22 +68,21 @@ main:
         duration: "2026.04 – 2026.06"
         sub: "LLM 推理微调 · Kaggle Silver · 71 / 4182 · Top 1.7%"
         bullets:
-          - "<strong>Reasoning Fine-tuning：</strong>自动构建 Synthetic Reasoning Traces 与 YAML 训练 Pipeline，基于 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调；准确率 <strong>0.60 → 0.86</strong>。"
+          - "为提升模型在抽象推理任务上的表现，自动构建包含推理过程的训练数据，并对 <strong>NVIDIA Nemotron 30B-A3B</strong> 进行 LoRA 微调，将准确率从 <strong>0.60 提升至 0.86</strong>。"
 
 
       - title: "Kaggle NFL Big Data Bowl 2026"
         duration: "2025.10 – 2025.12"
         sub: "物理感知时空建模 · Kaggle Silver · 33 / 1899 · Top 1.7%"
         bullets:
-          - "<strong>Spatiotemporal Modeling：</strong>以 Chiral Augmentation（Random Y-Flip）引入球场对称先验；在 STTRE 中加入 Relative Role Bias、Gated Fusion 与 Auxiliary Velocity Loss。"
-          - "<strong>Ensemble：</strong>以 Polar Vector Ensemble 融合 STTRE / GNN / Bi-GRU，Public LB <strong>0.519</strong>。"
+          - "针对球员轨迹预测中的球场对称性、角色互动与运动惯性，设计镜像数据增强和时空建模方案，并融合 STTRE、GNN 与 Bi-GRU 三个互补模型；Public LB 达 <strong>0.519</strong>。"
 
 
       - title: "Vesuvius Challenge - Surface Detection"
         duration: "2025.12 – 2026.02"
         sub: "3D Computer Vision · Kaggle Silver · 69 / 1391 · Top 5%"
         bullets:
-          - "<strong>3D Segmentation：</strong>从低对比度 3D X-ray voxel 分割碳化卷轴表面；以 PyTorch 构建训练 Pipeline，并用 DDP / multi-GPU 加速迭代。"
+          - "为从低对比度 3D X-ray 体素中识别碳化卷轴表面，使用 PyTorch 搭建 3D 分割训练流程，并通过 DDP 多 GPU 训练加快实验迭代，为虚拟展开提供分割结果。"
 
 
   - type: skills
