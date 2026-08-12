@@ -56,12 +56,12 @@ main:
         sub: "AI Agent 工作流 / Human-in-the-loop · 人民邮电出版社 · The Kaggle Book 2nd Edition"
         duration: "2026.07 – 2026.08"
         bullets:
-          - "为解决长篇技术书翻译中的漏译、术语漂移与 Word 格式损坏，设计“<strong>Agent 分片初译—自动校验—人工审校—出版社反馈回流</strong>”流程，并以 XML 中间层隔离翻译内容与 DOCX 排版，确保人工版本不被自动流程覆盖。"
-          - "<strong>1 个月完成第 1–9 章、约 12.4 万中文字</strong>；第 9 章自动核对 <strong>1,176 个内容块、1,030 个代码片段、51 个 URL、3 张图片</strong>，稳定生成出版社可编辑的 DOCX。"
+          - "为解决长篇技术书翻译中的漏译、术语漂移与 Word 格式损坏，设计“<strong>Agent 分片初译—自动校验—人工审校—出版社反馈</strong>”流程，并以 XML 中间层隔离翻译内容与 DOCX 排版，兼顾翻译速度、质量、格式。"
+          - "<strong>1 个月完成第 1–9 章、约 12.4 万中文字</strong>；稳定生成符合出版社格式、质量要求的Word文档。"
 
 
   - type: projects
-    name: "Kaggle 竞赛项目 · 三枚银牌"
+    name: "Kaggle 数据科学竞赛"
     content:
 
       - title: "NVIDIA Nemotron Model Reasoning Challenge"
@@ -93,7 +93,7 @@ main:
         summary: "PRD · Payment / Fund Flow · A/B Testing · Payment Compliance · 跨团队推进"
 
       - title: "技术"
-        summary: "Python · SQL · PyTorch · Linux · Git · Docker · CUDA / DDP"
+        summary: "Python · SQL · PyTorch · Claude Code
 
       - title: "语言"
         summary: "TOEFL 115 · GRE 333 · English working proficiency"
